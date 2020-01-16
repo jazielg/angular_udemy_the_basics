@@ -27,3 +27,6 @@
 </ng-template>
 
 <app-server *ngFor="let server of servers"></app-server>
+
+<button class="btn btn-secondary" (click)="showSecret = !showSecret">Display Details!</button>
+<p *ngIf="showSecret">SECRET!</p>
